@@ -65,7 +65,7 @@ function finalResult(){
         return;
     }
     try{
-        const input = expressionElement.value.replace(/÷/g, '/')
+        const input = expressionElement.value.replace(/÷/g, '/').replace(/\^/g, '**')
         const result = eval(input)
         inputElement.value = result
         addToHistory(expressionElement.value,result)
