@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <div class="calculator">
+        <div class="header">
+        <h2 style="padding:20px; padding-left: 0px;">Basic Calculator</h2>
+        <!-- <button id="voiceInput">🎤</button> -->
+        <div class="history" id ="history-toggle" style="text-align: right;padding:30px;">
+            <h3 id="history-icon" style="cursor: pointer;"><i class="fas fa-history"></i></h3>
+            <!-- <ul id="historyList" style="display:none;"></ul> -->
+        </div>
+        </div><br>
+        <input type="text" id="expression" >
+        <br><br>
+        <input type="text" id="result" readonly>
+        <div class="btns">
+            <button class="clear">C</button>
+            <button class="operator">^</button>
+            <button class="operator">&divide;</button>
+            <button class="operator">*</button>
+            <button class="number">(</button>
+            <button class="number">)</button>
+            <button class="backspace">⌫</button>
+            <button class="operator">-</button>
+            <button class="number">7</button>
+            <button class="number">8</button>
+            <button class="number">9</button>
+            <button class="operator">+</button>
+            <button class="number">4</button>
+            <button class="number">5</button>
+            <button class="number">6</button>
+            <button class="operator">%</button>
+            <button class="number">1</button>
+            <button class="number">2</button>
+            <button class="number">3</button>
+            <button class="equal">=</button>
+            <button class="button plus-minus">+/-</button>
+            <button class="number">0</button>
+            <button class="decimal">.</button>
+            
+        </div>
+    </div>
+    <div class="sidebar" id="historySidebar">
+        <h3>History</h3>
+        <button id="clearHistory">Clear All</button>
+        <ul id="historyList"></ul>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
